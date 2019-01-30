@@ -1,4 +1,4 @@
-package com.cztv.animiation;
+package com.cztv.animation;
 
 import org.junit.Test;
 

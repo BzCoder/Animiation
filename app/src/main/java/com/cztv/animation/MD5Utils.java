@@ -1,4 +1,4 @@
-package com.cztv.animiation;
+package com.cztv.animation;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
  * @Author:chenssy
  * @date:2016年4月9日
  */
-class MD5Utils {
+public class MD5Utils {
 	protected final static String MD5_KEY = "MD5";
 	
 	protected final static String SHA_KEY = "SHA1";
