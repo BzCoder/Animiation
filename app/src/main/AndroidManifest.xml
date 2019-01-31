@@ -4,7 +4,7 @@
     package="com.cztv.animation">
 
     <application
-        android:name="com.cztv.animation.App"
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,17 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.cztv.animation.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cztv.animation.PlaySequentiallyActivity" />
-        <activity android:name="com.cztv.animation.ObjectAnimatorActivity" />
-        <activity android:name="com.cztv.animation.FlowerAnimatorActivity" />
-        <activity android:name="com.cztv.animation.LayoutAnimationActivity" />
+        <activity android:name=".PlaySequentiallyActivity" />
+        <activity android:name=".ObjectAnimatorActivity" />
+        <activity android:name=".FlowerAnimatorActivity" />
+        <activity android:name=".LayoutAnimationActivity" />
+        <activity android:name=".GridLayoutAnimationActivity" />
+        <activity android:name=".AddDeleteActivity" />
+        <activity android:name=".AddDeleteCustomActivity" />
+        <activity android:name=".ListViewInActivity" />
     </application>
 
 </manifest>

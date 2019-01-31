@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button combine;
     private Button flower;
     private Button layout;
+    private Button linear_layout;
+    private Button grid_layout;
+    private Button addDeleteLayout;
+    private Button addDeleteCustomLayout;
+    private Button listInLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +36,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         single = findViewById(R.id.single);
         combine = findViewById(R.id.combine);
         flower = findViewById(R.id.flower);
-        layout = findViewById(R.id.layout);
-
+        layout = findViewById(R.id.linear_layout);
         single.setOnClickListener(this);
         combine.setOnClickListener(this);
         flower.setOnClickListener(this);
         layout.setOnClickListener(this);
+        linear_layout = (Button) findViewById(R.id.linear_layout);
+        linear_layout.setOnClickListener(this);
+        grid_layout = (Button) findViewById(R.id.grid_layout);
+        grid_layout.setOnClickListener(this);
+        addDeleteLayout = (Button) findViewById(R.id.add_delete_layout);
+        addDeleteLayout.setOnClickListener(this);
+        addDeleteCustomLayout = (Button) findViewById(R.id.add_delete_custom_layout);
+        addDeleteCustomLayout.setOnClickListener(this);
+        listInLayout = (Button) findViewById(R.id.list_in_layout);
+        listInLayout.setOnClickListener(this);
     }
 
     @Override
@@ -51,11 +65,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.flower:
                 ARouter.getInstance().build("/animator/FlowerAnimatorActivity").navigation();
                 break;
-            case R.id.layout:
+            case R.id.linear_layout:
                 ARouter.getInstance().build("/animator/LayoutAnimationActivity").navigation();
+                break;
+            case R.id.grid_layout:
+                ARouter.getInstance().build("/animator/GridLayoutAnimationActivity").navigation();
+                break;
+            case R.id.add_delete_layout:
+                ARouter.getInstance().build("/animator/AddDeleteAnimationActivity").navigation();
+                break;
+            case R.id.add_delete_custom_layout:
+                ARouter.getInstance().build("/animator/AddDeleteCustomAnimationActivity").navigation();
+                break;
+            case R.id.list_in_layout:
+                ARouter.getInstance().build("/animator/ListViewInActivity").navigation();
                 break;
             default:
                 break;
+
         }
     }
 }

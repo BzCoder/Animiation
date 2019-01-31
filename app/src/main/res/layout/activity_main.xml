@@ -6,31 +6,61 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <Button
         android:id="@+id/single"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="单独动画"/>
+        android:text="单独动画"
+        android:textSize="14sp" />
+
     <Button
         android:id="@+id/combine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="组合动画"/>
+        android:text="组合动画"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/flower"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="两开花"/>
+        android:text="两开花"
+        android:textSize="14sp" />
 
 
     <Button
-        android:id="@+id/layout"
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="表格"/>
+        android:text="linear表格"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="grid表格"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/add_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加删除"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/add_delete_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义添加删除"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/list_in_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表划入动画"
+        android:textSize="14sp" />
 </LinearLayout>

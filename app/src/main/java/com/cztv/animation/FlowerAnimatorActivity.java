@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
+import android.view.animation.BounceInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -98,6 +99,7 @@ public class FlowerAnimatorActivity extends AppCompatActivity implements View.On
                 ObjectAnimator.ofFloat(view, "scaleY", 0f, 1f),
                 ObjectAnimator.ofFloat(view, "alpha", 0f, 1));
         //动画周期为500ms
+        set.setInterpolator(new BounceInterpolator());
         set.setDuration(1 * 500).start();
     }
 
@@ -115,6 +117,7 @@ public class FlowerAnimatorActivity extends AppCompatActivity implements View.On
                 ObjectAnimator.ofFloat(view, "scaleX", 1f, 0.1f),
                 ObjectAnimator.ofFloat(view, "scaleY", 1f, 0.1f),
                 ObjectAnimator.ofFloat(view, "alpha", 1f, 0f));
+        set.setInterpolator(new BounceInterpolator());
         set.setDuration(1 * 500).start();
 
 
