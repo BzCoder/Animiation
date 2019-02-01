@@ -1,4 +1,4 @@
-package com.cztv.animation;
+package com.cztv;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.cztv.animation.R;
 
 
 /**
@@ -14,15 +15,16 @@ import com.alibaba.android.arouter.launcher.ARouter;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     private Button single;
     private Button combine;
     private Button flower;
-    private Button layout;
-    private Button linear_layout;
-    private Button grid_layout;
+    private Button linearLayout;
+    private Button gridLayout;
     private Button addDeleteLayout;
     private Button addDeleteCustomLayout;
     private Button listInLayout;
+    private Button paintLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,24 +35,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void initView() {
-        single = findViewById(R.id.single);
-        combine = findViewById(R.id.combine);
-        flower = findViewById(R.id.flower);
-        layout = findViewById(R.id.linear_layout);
+
+        single = (Button) findViewById(R.id.single);
         single.setOnClickListener(this);
+        combine = (Button) findViewById(R.id.combine);
         combine.setOnClickListener(this);
+        flower = (Button) findViewById(R.id.flower);
         flower.setOnClickListener(this);
-        layout.setOnClickListener(this);
-        linear_layout = (Button) findViewById(R.id.linear_layout);
-        linear_layout.setOnClickListener(this);
-        grid_layout = (Button) findViewById(R.id.grid_layout);
-        grid_layout.setOnClickListener(this);
+        linearLayout = (Button) findViewById(R.id.linear_layout);
+        linearLayout.setOnClickListener(this);
+        gridLayout = (Button) findViewById(R.id.grid_layout);
+        gridLayout.setOnClickListener(this);
         addDeleteLayout = (Button) findViewById(R.id.add_delete_layout);
         addDeleteLayout.setOnClickListener(this);
         addDeleteCustomLayout = (Button) findViewById(R.id.add_delete_custom_layout);
         addDeleteCustomLayout.setOnClickListener(this);
         listInLayout = (Button) findViewById(R.id.list_in_layout);
         listInLayout.setOnClickListener(this);
+        paintLayout = (Button) findViewById(R.id.paint_layout);
+        paintLayout.setOnClickListener(this);
     }
 
     @Override
@@ -80,8 +83,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.list_in_layout:
                 ARouter.getInstance().build("/animator/ListViewInActivity").navigation();
                 break;
+            case R.id.paint_layout:
+                ARouter.getInstance().build("/paint/PaintActivity").navigation();
+                break;
             default:
                 break;
+
 
         }
     }

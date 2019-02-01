@@ -22,7 +22,7 @@ public class ListViewInActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view_in);
+        setContentView(R.layout.activity_list_view_in);
         List<Drawable> drawables = new ArrayList<>();
         drawables.add(getResources().getDrawable(R.drawable.ic_launcher_background));
         drawables.add(getResources().getDrawable(R.drawable.ic_launcher_background));

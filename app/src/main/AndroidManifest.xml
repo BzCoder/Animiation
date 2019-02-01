@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.cztv.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +27,7 @@
         <activity android:name=".AddDeleteActivity" />
         <activity android:name=".AddDeleteCustomActivity" />
         <activity android:name=".ListViewInActivity" />
+        <activity android:name="com.cztv.paint.PaintActivity" />
     </application>
 
 </manifest>
