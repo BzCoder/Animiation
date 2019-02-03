@@ -63,10 +63,24 @@
         android:layout_height="wrap_content"
         android:text="列表划入动画"
         android:textSize="14sp" />
+
     <Button
         android:id="@+id/paint_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="几何图形绘制"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手绘"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/wave_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="波浪"
         android:textSize="14sp" />
 </LinearLayout>

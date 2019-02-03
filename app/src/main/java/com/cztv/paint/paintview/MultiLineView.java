@@ -1,4 +1,4 @@
-package com.cztv.paint;
+package com.cztv.paint.paintview;
 
 import android.content.Context;
 import android.graphics.Canvas;

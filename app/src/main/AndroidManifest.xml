@@ -4,7 +4,7 @@
     package="com.cztv.animation">
 
     <application
-        android:name=".App"
+        android:name="com.cztv.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,6 +28,8 @@
         <activity android:name=".AddDeleteCustomActivity" />
         <activity android:name=".ListViewInActivity" />
         <activity android:name="com.cztv.paint.PaintActivity" />
+        <activity android:name="com.cztv.draw.DrawActivity" />
+        <activity android:name="com.cztv.draw.WaveActivity" />
     </application>
 
 </manifest>

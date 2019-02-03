@@ -1,4 +1,4 @@
-package com.cztv.animation;
+package com.cztv;
 
 import android.app.Application;
 

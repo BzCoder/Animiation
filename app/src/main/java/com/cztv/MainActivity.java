@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button addDeleteCustomLayout;
     private Button listInLayout;
     private Button paintLayout;
+    private Button drawLayout;
+    private Button waveLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listInLayout.setOnClickListener(this);
         paintLayout = (Button) findViewById(R.id.paint_layout);
         paintLayout.setOnClickListener(this);
+
+        drawLayout = (Button) findViewById(R.id.draw_layout);
+        drawLayout.setOnClickListener(this);
+        waveLayout = (Button) findViewById(R.id.wave_layout);
+        waveLayout.setOnClickListener(this);
     }
 
     @Override
@@ -85,6 +92,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.paint_layout:
                 ARouter.getInstance().build("/paint/PaintActivity").navigation();
+                break;
+            case R.id.draw_layout:
+                ARouter.getInstance().build("/draw/DrawActivity").navigation();
+                break;
+            case R.id.wave_layout:
+                ARouter.getInstance().build("/draw/WaveActivity").navigation();
                 break;
             default:
                 break;
