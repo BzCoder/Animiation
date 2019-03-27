@@ -1,86 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.cztv.MainActivity">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/single"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="单独动画"
-        android:textSize="14sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="me.bzcoder.MainActivity">
 
-    <Button
-        android:id="@+id/combine"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="组合动画"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单独动画"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/flower"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="两开花"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/combine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="组合动画"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/flower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="两开花"
+            android:textSize="14sp" />
 
 
-    <Button
-        android:id="@+id/linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="linear表格"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="linear表格"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/grid_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="grid表格"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="grid表格"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/add_delete_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="添加删除"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/add_delete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加删除"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/add_delete_custom_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="自定义添加删除"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/add_delete_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义添加删除"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/list_in_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="列表划入动画"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/list_in_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列表划入动画"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/paint_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="几何图形绘制"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/paint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="几何图形绘制"
+            android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/draw_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="手绘"
-        android:textSize="14sp" />
-    <Button
-        android:id="@+id/wave_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="波浪"
-        android:textSize="14sp" />
-</LinearLayout>
+        <Button
+            android:id="@+id/draw_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手绘"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/wave_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="波浪"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/qq_red_point_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QQ红点拖动"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</ScrollView>

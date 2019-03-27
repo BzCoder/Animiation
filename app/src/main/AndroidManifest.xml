@@ -1,35 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cztv.animation">
+    package="com.bzcoder.animation">
 
     <application
-        android:name="com.cztv.App"
+        android:name="me.bzcoder.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.cztv.MainActivity">
+        <activity
+            android:name="me.bzcoder.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PlaySequentiallyActivity" />
-        <activity android:name=".ObjectAnimatorActivity" />
-        <activity android:name=".FlowerAnimatorActivity" />
-        <activity android:name=".LayoutAnimationActivity" />
-        <activity android:name=".GridLayoutAnimationActivity" />
-        <activity android:name=".AddDeleteActivity" />
-        <activity android:name=".AddDeleteCustomActivity" />
-        <activity android:name=".ListViewInActivity" />
-        <activity android:name="com.cztv.paint.PaintActivity" />
-        <activity android:name="com.cztv.draw.DrawActivity" />
-        <activity android:name="com.cztv.draw.WaveActivity" />
+        <activity
+            android:name="me.bzcoder.animation.PlaySequentiallyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.ObjectAnimatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.FlowerAnimatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.LayoutAnimationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.GridLayoutAnimationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.AddDeleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.AddDeleteCustomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.animation.ListViewInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.paint.PaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.draw.DrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.draw.WaveActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="me.bzcoder.qqredpoint.QQRedPointActivity" />
     </application>
 
 </manifest>
