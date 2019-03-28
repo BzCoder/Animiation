@@ -15,7 +15,6 @@ import com.bzcoder.animation.R;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
     private Button single;
     private Button combine;
     private Button flower;
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button qqRedPointLayout;
     private Button bitMapShadowLayout;
     private Button telescopeLayout;
+    private Button shimmerTextviewLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bitMapShadowLayout.setOnClickListener(this);
         telescopeLayout = (Button) findViewById(R.id.telescope_layout);
         telescopeLayout.setOnClickListener(this);
+        shimmerTextviewLayout = (Button) findViewById(R.id.shimmer_textview_layout);
+        shimmerTextviewLayout.setOnClickListener(this);
     }
 
     @Override
@@ -117,13 +119,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.telescope_layout:
                 ARouter.getInstance().build("/draw/TelescopeActivity").navigation();
                 break;
-
-
+            case R.id.shimmer_textview_layout:
+                ARouter.getInstance().build("/draw/ShimmerTextViewActivity").navigation();
+                break;
             default:
                 break;
-
-
-
         }
     }
 }

@@ -57,6 +57,9 @@
         <activity android:name="me.bzcoder.qqredpoint.QQRedPointActivity" />
         <activity android:name="me.bzcoder.bitmapshadow.BitmapShadowActivity" />
         <activity android:name="me.bzcoder.telescope.TelescopeActivity" />
+        <activity
+            android:name="me.bzcoder.shimmertextview.ShimmerTextViewActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

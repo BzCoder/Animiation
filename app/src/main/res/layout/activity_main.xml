@@ -108,6 +108,13 @@
             android:layout_height="wrap_content"
             android:text="望远镜"
             android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/shimmer_textview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跑马灯文字"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </ScrollView>
