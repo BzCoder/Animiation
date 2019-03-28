@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bitMapShadowLayout;
     private Button telescopeLayout;
     private Button shimmerTextviewLayout;
+    private Button ripple_button_layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         telescopeLayout.setOnClickListener(this);
         shimmerTextviewLayout = (Button) findViewById(R.id.shimmer_textview_layout);
         shimmerTextviewLayout.setOnClickListener(this);
+        ripple_button_layout = (Button) findViewById(R.id.ripple_button_layout);
+        ripple_button_layout.setOnClickListener(this);
     }
 
     @Override
@@ -122,8 +125,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.shimmer_textview_layout:
                 ARouter.getInstance().build("/draw/ShimmerTextViewActivity").navigation();
                 break;
+            case R.id.ripple_button_layout:
+                ARouter.getInstance().build("/draw/RippleButtonActivity").navigation();
+                break;
             default:
                 break;
+
         }
     }
 }

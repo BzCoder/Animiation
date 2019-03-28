@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,7 +29,7 @@ import com.bzcoder.animation.R;
 public class ObjectAnimatorActivity extends AppCompatActivity {
     TextView tv;
     TextView mTextView;
-    ImageView imageView;
+    ImageView imageView,imageView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class ObjectAnimatorActivity extends AppCompatActivity {
         doAnimatorTwo();
         keyFrameAnimator();
     }
+
 
     void doAnimatorOne() {
         tv = findViewById(R.id.tv_text);
@@ -117,4 +119,6 @@ public class ObjectAnimatorActivity extends AppCompatActivity {
         animator.setDuration(1000);
         animator.start();
     }
+
+
 }

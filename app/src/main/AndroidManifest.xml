@@ -60,6 +60,7 @@
         <activity
             android:name="me.bzcoder.shimmertextview.ShimmerTextViewActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="me.bzcoder.ripplebutton.RippleButtonActivity" />
     </application>
 
 </manifest>

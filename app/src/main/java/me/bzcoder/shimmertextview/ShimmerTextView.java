@@ -8,7 +8,11 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
-
+/**
+ * 
+ * @author : BaoZhou
+ * @date : 2019/3/28 14:35
+ */
 public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView {
     private Paint mPaint;
     private int mDx;
