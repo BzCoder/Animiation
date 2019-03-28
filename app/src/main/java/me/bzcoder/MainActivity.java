@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button drawLayout;
     private Button waveLayout;
     private Button qqRedPointLayout;
+    private Button bitMapShadowLayout;
+    private Button telescopeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +66,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         waveLayout.setOnClickListener(this);
         qqRedPointLayout = (Button) findViewById(R.id.qq_red_point_layout);
         qqRedPointLayout.setOnClickListener(this);
+        bitMapShadowLayout = (Button) findViewById(R.id.bit_map_shadow_layout);
+        bitMapShadowLayout.setOnClickListener(this);
+        telescopeLayout = (Button) findViewById(R.id.telescope_layout);
+        telescopeLayout.setOnClickListener(this);
     }
 
     @Override
@@ -105,8 +111,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.qq_red_point_layout:
                 ARouter.getInstance().build("/draw/QQRedPointActivity").navigation();
                 break;
+            case R.id.bit_map_shadow_layout:
+                ARouter.getInstance().build("/draw/BitmapShadowActivity").navigation();
+                break;
+            case R.id.telescope_layout:
+                ARouter.getInstance().build("/draw/TelescopeActivity").navigation();
+                break;
+
+
             default:
                 break;
+
 
 
         }

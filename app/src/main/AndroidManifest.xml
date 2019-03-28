@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name="me.bzcoder.MainActivity"
@@ -55,6 +55,8 @@
             android:name="me.bzcoder.draw.WaveActivity"
             android:screenOrientation="portrait" />
         <activity android:name="me.bzcoder.qqredpoint.QQRedPointActivity" />
+        <activity android:name="me.bzcoder.bitmapshadow.BitmapShadowActivity" />
+        <activity android:name="me.bzcoder.telescope.TelescopeActivity" />
     </application>
 
 </manifest>

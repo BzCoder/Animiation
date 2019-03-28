@@ -94,6 +94,20 @@
             android:layout_height="wrap_content"
             android:text="QQ红点拖动"
             android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bit_map_shadow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义阴影组件"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/telescope_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="望远镜"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </ScrollView>
