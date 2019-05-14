@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button shimmerTextviewLayout;
     private Button rippleButtonLayout;
     private Button flowButtonLayout;
+    private Button waterFallLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,8 +77,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         shimmerTextviewLayout.setOnClickListener(this);
         rippleButtonLayout = (Button) findViewById(R.id.ripple_button_layout);
         rippleButtonLayout.setOnClickListener(this);
-        flowButtonLayout = (Button) findViewById(R.id.flow_button_layout);
+        flowButtonLayout = (Button) findViewById(R.id.flow_layout);
         flowButtonLayout.setOnClickListener(this);
+        waterFallLayout = (Button) findViewById(R.id.water_fall_layout);
+        waterFallLayout.setOnClickListener(this);
     }
 
     @Override
@@ -131,11 +134,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.ripple_button_layout:
                 ARouter.getInstance().build("/draw/RippleButtonActivity").navigation();
                 break;
-            case R.id.flow_button_layout:
+            case R.id.flow_layout:
                 ARouter.getInstance().build("/draw/FlowLayoutActivity").navigation();
+                break;
+            case R.id.water_fall_layout:
+                ARouter.getInstance().build("/draw/WaterFallActivity").navigation();
                 break;
             default:
                 break;
+
 
         }
     }

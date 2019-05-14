@@ -72,6 +72,9 @@
         <activity
             android:name="me.bzcoder.flowlayout.FlowLayoutActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.waterfall.WaterFallActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
