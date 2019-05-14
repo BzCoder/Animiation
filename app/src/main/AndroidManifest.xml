@@ -54,13 +54,24 @@
         <activity
             android:name="me.bzcoder.draw.WaveActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="me.bzcoder.qqredpoint.QQRedPointActivity" />
-        <activity android:name="me.bzcoder.bitmapshadow.BitmapShadowActivity" />
-        <activity android:name="me.bzcoder.telescope.TelescopeActivity" />
+        <activity
+            android:name="me.bzcoder.qqredpoint.QQRedPointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.bitmapshadow.BitmapShadowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.telescope.TelescopeActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="me.bzcoder.shimmertextview.ShimmerTextViewActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="me.bzcoder.ripplebutton.RippleButtonActivity" />
+        <activity
+            android:name="me.bzcoder.ripplebutton.RippleButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.bzcoder.flowlayout.FlowLayoutActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bitMapShadowLayout;
     private Button telescopeLayout;
     private Button shimmerTextviewLayout;
-    private Button ripple_button_layout;
+    private Button rippleButtonLayout;
+    private Button flowButtonLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,8 +74,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         telescopeLayout.setOnClickListener(this);
         shimmerTextviewLayout = (Button) findViewById(R.id.shimmer_textview_layout);
         shimmerTextviewLayout.setOnClickListener(this);
-        ripple_button_layout = (Button) findViewById(R.id.ripple_button_layout);
-        ripple_button_layout.setOnClickListener(this);
+        rippleButtonLayout = (Button) findViewById(R.id.ripple_button_layout);
+        rippleButtonLayout.setOnClickListener(this);
+        flowButtonLayout = (Button) findViewById(R.id.flow_button_layout);
+        flowButtonLayout.setOnClickListener(this);
     }
 
     @Override
@@ -127,6 +130,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ripple_button_layout:
                 ARouter.getInstance().build("/draw/RippleButtonActivity").navigation();
+                break;
+            case R.id.flow_button_layout:
+                ARouter.getInstance().build("/draw/FlowLayoutActivity").navigation();
                 break;
             default:
                 break;

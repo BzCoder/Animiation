@@ -122,6 +122,13 @@
             android:layout_height="wrap_content"
             android:text="水波纹按钮"
             android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/flow_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FlowLayout"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </ScrollView>
