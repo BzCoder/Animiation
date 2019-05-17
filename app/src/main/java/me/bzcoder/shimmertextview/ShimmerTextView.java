@@ -8,12 +8,15 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
+
+import androidx.appcompat.widget.AppCompatTextView;
+
 /**
  * 
  * @author : BaoZhou
  * @date : 2019/3/28 14:35
  */
-public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView {
+public class ShimmerTextView extends AppCompatTextView {
     private Paint mPaint;
     private int mDx;
     private LinearGradient mLinearGradient;

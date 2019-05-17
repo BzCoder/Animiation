@@ -11,11 +11,13 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.animation.AccelerateInterpolator;
 
+import androidx.appcompat.widget.AppCompatButton;
+
 /**
  * @author : BaoZhou
  * @date : 2019/3/28 20:27
  */
-public class RippleView extends android.support.v7.widget.AppCompatButton {
+public class RippleView extends AppCompatButton {
     private int mX, mY;
     private ObjectAnimator mAnimator;
     private int DEFAULT_RADIUS = 50;
