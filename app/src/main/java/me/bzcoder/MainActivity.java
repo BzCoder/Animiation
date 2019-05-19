@@ -1,9 +1,10 @@
 package me.bzcoder;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.bzcoder.animation.R;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button rippleButtonLayout;
     private Button flowButtonLayout;
     private Button waterFallLayout;
+    private Button recyclerViewLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +83,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         flowButtonLayout.setOnClickListener(this);
         waterFallLayout = (Button) findViewById(R.id.water_fall_layout);
         waterFallLayout.setOnClickListener(this);
+        recyclerViewLayout = (Button) findViewById(R.id.recycler_view_layout);
+        recyclerViewLayout.setOnClickListener(this);
     }
 
     @Override
@@ -140,8 +144,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.water_fall_layout:
                 ARouter.getInstance().build("/draw/WaterFallActivity").navigation();
                 break;
+            case R.id.recycler_view_layout:
+                ARouter.getInstance().build("/view/RecyclerViewActivity").navigation();
+                break;
             default:
                 break;
+
 
 
         }
