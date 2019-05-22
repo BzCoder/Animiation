@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -34,7 +33,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     private void initView() {
         generateData();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new CustomLayoutManager());
+        recyclerView.setLayoutManager(new CustomLayoutManager2());
         recyclerView.setAdapter(new RecyclerAdapter(this,mData));
     }
 
